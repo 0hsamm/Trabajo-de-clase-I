@@ -121,17 +121,5 @@ public class FileHandler {
 		return null;
 	}
 	
-	public static void escribirPropiedades(String url, String contenido) {
-		try {
-		archivo = new File(url);
-		if (!archivo.exists()) {
-			archivo.createNewFile();
-		}
-		
-		} catch (IOException e) {
-			System.out.println("Error al cargar el archivo de propiedades");
-			e.printStackTrace();
-		}
-	}
 	
 }
