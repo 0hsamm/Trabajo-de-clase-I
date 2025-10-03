@@ -1,14 +1,32 @@
 package co.edu.unbosque.model.persistence;
 
+import java.util.ArrayList;
+
+import co.edu.unbosque.model.Traduccion;
 import co.edu.unbosque.model.TraduccionDTO;
 
-public class TraduccionDAO implements DAO<TraduccionDTO>{
+public class TraduccionDAO implements DAO<Traduccion, TraduccionDTO>{
+	private ArrayList<Traduccion> listaTraduccion;
+	private ArrayList<TraduccionDTO> listaTraduccionDTO;
+	
+	private final String FILE_NAME = "Traduccion.csv";
+	private final String SERIAL_FILE_NAME = "Traduccion.bin";
+	
+	
+	
+	public TraduccionDAO() {
+		listaTraduccion = new ArrayList<>();
+		listaTraduccionDTO = new ArrayList<>();
+		leerDesdeArchivoDeTexto(FILE_NAME);
+		cargarDesdeArchivoSerializado();
+	}
+	
 
 	@Override
 	public void create(TraduccionDTO newData) {
-		// TODO Auto-generated method stub
 		
 	}
+
 
 	@Override
 	public String showAll() {
@@ -40,12 +58,5 @@ public class TraduccionDAO implements DAO<TraduccionDTO>{
 		
 	}
 
-	@Override
-	public String generarReporteDiaActual() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	
-	
 
 }
