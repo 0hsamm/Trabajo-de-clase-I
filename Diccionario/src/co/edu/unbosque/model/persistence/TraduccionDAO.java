@@ -1,6 +1,5 @@
 package co.edu.unbosque.model.persistence;
 
-import co.edu.unbosque.model.Traduccion;
 import co.edu.unbosque.model.TraduccionDTO;
 
 public class TraduccionDAO implements DAO<TraduccionDTO>{
@@ -12,33 +11,9 @@ public class TraduccionDAO implements DAO<TraduccionDTO>{
 	}
 
 	@Override
-	public boolean delete(int index) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public boolean update(int index, TraduccionDTO newData) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
 	public String showAll() {
 		// TODO Auto-generated method stub
 		return null;
-	}
-
-	@Override
-	public int count() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
 	}
 
 	@Override
@@ -70,7 +45,7 @@ public class TraduccionDAO implements DAO<TraduccionDTO>{
 		// TODO Auto-generated method stub
 		return null;
 	}
-
-
+	
+	
 
 }

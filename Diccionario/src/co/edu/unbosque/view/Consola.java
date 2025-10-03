@@ -62,27 +62,6 @@ public class Consola {
 		return fecha;
 	}
 	
-	public void mostrarMenuPrincipal() {
-		escribirLineaConSalto(prop.getProperty("veterinaria.menuprincipal.opcionesprincipales"));
-	}
-	public void mostrarMenuAnadir() {
-		escribirLineaConSalto(prop.getProperty("veterinaria.menuprincipales.opcionesañadir"));
-	}
-	
-	public void mostrarMenuEliminar() {
-		escribirLineaConSalto(prop.getProperty("veterinaria.menuprincipales.opcioneseliminar"));
-	}
-	
-	public void mostrarMenuActualizar() {
-		escribirLineaConSalto(prop.getProperty("veterinaria.menuprincipales.opcionesactualizar"));
-	}
-	public void mostrarMenuMostrar() {
-		escribirLineaConSalto(prop.getProperty("veterinaria.menuprincipales.opcionesmostrar"));
-	}
-	public void mostrarMenuReporte() {
-		escribirLineaConSalto(prop.getProperty("veterinaria.menuprincipales.opcionesreporte"));
-	}
-	
 	public void mostrarMenuLenguaje() {
 		System.out.println("Ingrese el lenguaje que desea ejecutar ne le aplicativo:"
 				+"\n 1. Español"
