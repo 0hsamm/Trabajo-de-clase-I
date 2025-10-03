@@ -56,17 +56,20 @@ public class Consola {
 		}		
 	}
 	
-	public LocalDate leerFecha() {
-		String fechaTexto = sc.nextLine();
-		LocalDate fecha = LocalDate.parse(fechaTexto);
-		return fecha;
+
+	
+	public void mostrarMenuPrincipal() {
+		escribirLineaConSalto(prop.getProperty("veterinaria.menuprincipal.opcionesprincipales"));
+	}
+	public void mostrarMenuAnadir() {
+		escribirLineaConSalto(prop.getProperty("veterinaria.menuprincipales.opcionesañadir"));
 	}
 	
-	public void mostrarMenuLenguaje() {
-		System.out.println("Ingrese el lenguaje que desea ejecutar ne le aplicativo:"
-				+"\n 1. Español"
-				+"\n 2. English"
-				+"\n 3. Deutsch"
-				+"\n 4. Italiano");
+	public void mostrarMenuEliminar() {
+		escribirLineaConSalto(prop.getProperty("veterinaria.menuprincipales.opcioneseliminar"));
 	}
+	
+
+	
+
 }
