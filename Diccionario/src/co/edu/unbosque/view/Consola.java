@@ -1,6 +1,5 @@
 package co.edu.unbosque.view;
 
-import java.time.LocalDate;
 import java.util.Properties;
 import java.util.Scanner;
 
@@ -57,17 +56,13 @@ public class Consola {
 	}
 	
 
-	
-	public void mostrarMenuPrincipal() {
-		escribirLineaConSalto(prop.getProperty("veterinaria.menuprincipal.opcionesprincipales"));
-	}
-	public void mostrarMenuAnadir() {
-		escribirLineaConSalto(prop.getProperty("veterinaria.menuprincipales.opcionesañadir"));
-	}
-	
-	public void mostrarMenuEliminar() {
-		escribirLineaConSalto(prop.getProperty("veterinaria.menuprincipales.opcioneseliminar"));
-	}
+	public void mostrarMenu() {
+        System.out.println("Diccionario");
+        System.out.println("1 - Ingresar palabra");
+        System.out.println("2 - Ver palabras traducidas");
+        System.out.println("3 - Salir");
+        System.out.print("Seleccione una opción: ");
+    }
 	
 
 	

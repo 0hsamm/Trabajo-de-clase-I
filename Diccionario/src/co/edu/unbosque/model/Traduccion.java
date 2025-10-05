@@ -1,6 +1,12 @@
 package co.edu.unbosque.model;
 
-public class Traduccion {
+import java.io.Serializable;
+
+public class Traduccion implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2995112188596815998L;
 	private String palabraATraducir;
 	private String palabraTraducida;
 	private String idiomaDetectado;
@@ -42,8 +48,10 @@ public class Traduccion {
 
 	@Override
 	public String toString() {
-		return "Traduccion [palabraATraducir=" + palabraATraducir + ", palabraTraducida=" + palabraTraducida
-				+ ", idiomaDetectado=" + idiomaDetectado + "]";
+		return "Traduccion "
+				+ "palabraATraducir: " + palabraATraducir 
+				+ "palabraTraducida: " + palabraTraducida
+				+ "idiomaDetectado: " + idiomaDetectado;
 	}
 	
 	
